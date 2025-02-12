@@ -3,6 +3,10 @@ import movieRoutes from"./routes/movies.route.js"
 import connectDB from "./lib/db.js";
 const app = express();
 const port = 3000;
+//Data Understanding middlewares
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}))
 
 //Connect DB
 
